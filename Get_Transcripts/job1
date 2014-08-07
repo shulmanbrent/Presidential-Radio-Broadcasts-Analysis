@@ -1,0 +1,12 @@
+#!/bin/sh
+for year in `seq 1982 2014`
+do
+ echo $year
+ curl -o RadioIndex"$year".html http://www.presidency.ucsb.edu/satradio.php?year="$year"\&Submit=DISPLAY
+done
+
+#curl -o list2000.html http://www.presidency.ucsb.edu/satradio.php?year=2000&Submit=DISPLAY
+
+# http://www.presidency.ucsb.edu/ws/index.php?pid=25545
+
+#42359

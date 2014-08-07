@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+for year in `seq 1982 2014`
+do
+  fgrep 'class="listdate" valign="top"' RadioIndex"$year".html
+done |
+sed 's/^.*pid=//;s/\".*$//' > AllRadio

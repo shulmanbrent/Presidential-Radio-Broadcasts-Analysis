@@ -1,0 +1,6 @@
+#!/bin/sh
+gawk '
+{ printf("curl -o RadioTranscript%d.html http://www.presidency.ucsb.edu/ws/index.php?pid=%d\n", $1,$1)}
+' AllRadio >job4
+
+# http://www.presidency.ucsb.edu/ws/index.php?pid=25545
