@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
@@ -29,145 +29,84 @@
       <div id="main" role="main">
         <div class="download-bar">
         <div class="inner">
+	  <h1>This might take a little bit...</h1>
           <a href="https://github.com/shulmanbrent/Presidential-Radio-Broadcasts-Analysis/tarball/master" class="download-button tar"><span>Download</span></a>
           <a href="https://github.com/shulmanbrent/Presidential-Radio-Broadcasts-Analysis/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/shulmanbrent/Presidential-Radio-Broadcasts-Analysis" class="code">View Presidential-radio-broadcasts-analysis on GitHub</a>
+          <a href="https://github.com/shulmanbrent/Presidential-Radio-Broadcasts-Analysis" class="code">View on GitHub</a>
         </div>
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
           <blockquote>
 <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>An Analysis of Presidential Radio Broadcasts</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>by Brent Shulman</p>
 </blockquote>
 
-<pre lang="&gt;"><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
 <h3>
-<a name="i--introduction" class="anchor" href="#i--introduction"><span class="octicon octicon-link"></span></a>I.  Introduction</h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>I.	Introduction</h3>
 
 <p>Goals of Project:
-• To explore the uses and application of natural language processing and text mining 
-• Apply class ideas to a project about analysis
-• Expand coding knowledge
-• Become better at self-teaching
+<ul><li>To explore the uses and application of natural language processing and text mining </li>
+<li>Apply class ideas to a project about analysis</li>
+<li>Expand coding knowledge</li>
+<li>Become better at self-teaching</li>
 Aims:
-• Examine a corpus of President Saturday radio transcripts from Reagan – Obama
-• Discover trends in words choice over time – both by looking at individual Presidents and the group as a whole
-• Look at word Frequency for individuals and as a whole</p>
+<li>Examine a corpus of President Saturday radio transcripts from Reagan – Obama</li>
+<li>Discover trends in words choice over time – both by looking at individual Presidents and the group as a whole.</li>
+<li>Look at word Frequency for individuals and as a whole</li>
+</p>
 
 <h3>
-<a name="ii-theory-prior-research-and-background" class="anchor" href="#ii-theory-prior-research-and-background"><span class="octicon octicon-link"></span></a>II. Theory, Prior Research, and Background</h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>II.	Theory, Prior Research, and Background</h3>
 
-<p>While examining topics for this project I was drawn back to examples used in class of analyzing text. Professor Mark Liberman took State of the Union addresses and look at various lexical features of the speeches and graphed them. This stimulated my interests in programming as well as computational linguistics and led me to wonder what other large corpuses of documents could be investigated. I began to research for documents and was soon led back to political address. This is because there are often the most consistently and regularly produced. In addition, I thought that data of this kind would be ideal for following trends, as the political landscape is always changing, shaped by local and world events.
-Following this, I researched techniques and strategies for Text-mining, topic tracking, and content analysis. While I typically briefly scanned websites general information, two papers specifically provided the greatest insights. Both were read in greater depth. A Survey of Topic Tracking Techniques by Kamaldeep Kaur and Vishal Gupta2 provided background on techniques based around this general concept:
-In addition, this paper talked further about hidden Markov Models and provided inspiration for my own analysis. The other paper that influenced my research was Text Mining: A Brief Survey by Falguni Patel and Neha Soni3. It gave a slightly different look at the models for extracting information from a text documents.
- Following these readings, I delved in further to find a viable corpuses of data. After searching the internet and comparing sources, I found the University of California, Santa Barbara’s President Project. Here I discovered numerous amounts of data pertaining to presidential speeches and writings across much of recent history. For this project, I narrowed down my analysis to be of only the available Presidential Saturday Radio Addresses1. I chose to do this because the amount of data was of a large but manageable size for this first, initial project. Additionally, the addresses were produced on a weekly basis and therefore would be more diverse lexical data. The document corpus spans from Reagan though to Obama; however, there was a significant amount of data from Bush Sr’s address missing. This served to limit my projects view his presidency.
-The next step was to find to proper tools in order to accomplish my goals for the study. Very quickly the Natural Language Tool Kit (NLTK4) for Python appeared as the natural choice. After reading the preface of the Natural Language Processing book, I decided that this was the path to follow.</p>
+<p>While examining topics for this project I was drawn back to examples used in class of analyzing text. Professor Mark Liberman took State of the Union addresses and look at various lexical features of the speeches and graphed them. This stimulated my interests in programming as well as computational linguistics and led me to wonder what other large corpuses of documents could be investigated. I began to research for documents and was soon led back to political address. This is because there are often the most consistently and regularly produced. In addition, I thought that data of this kind would be ideal for following trends, as the political landscape is always changing, shaped by local and world events.</p>
+<p>Following this, I researched techniques and strategies for Text-mining, topic tracking, and content analysis. While I typically briefly scanned websites general information, two papers specifically provided the greatest insights. Both were read in greater depth. <u>A Survey of Topic Tracking Techniques by Kamaldeep Kaur and Vishal Gupta</u> provided background on techniques based around this general concept:</p>
+<p>n addition, this paper talked further about hidden Markov Models and provided inspiration for my own analysis. The other paper that influenced my research was <u>Text Mining: A Brief Survey by Falguni Patel and Neha Soni</u>. It gave a slightly different look at the models for extracting information from a text documents.</p>
+
+<p> Following these readings, I delved in further to find a viable corpuses of data. After searching the internet and comparing sources, I found the University of California, Santa Barbara’s President Project. Here I discovered numerous amounts of data pertaining to presidential speeches and writings across much of recent history. For this project, I narrowed down my analysis to be of only the available Presidential Saturday Radio Addresses1. I chose to do this because the amount of data was of a large but manageable size for this first, initial project. Additionally, the addresses were produced on a weekly basis and therefore would be more diverse lexical data. The document corpus spans from Reagan though to Obama; however, there was a significant amount of data from Bush Sr’s address missing. This served to limit my projects view his presidency.</p>
+
+<p>The next step was to find to proper tools in order to accomplish my goals for the study. Very quickly the Natural Language Tool Kit (NLTK4) for Python appeared as the natural choice. After reading the preface of the Natural Language Processing book, I decided that this was the path to follow.</p>
+
 
 <h3>
-<a name="iii----methods-and-procedures" class="anchor" href="#iii----methods-and-procedures"><span class="octicon octicon-link"></span></a>III.    Methods and Procedures</h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>III.	Methods and Procedures</h3>
 
-<p>After downloading and setting up Enthought’s Canopy5 python compiler, I set up and tested the NLTK4 package. I practiced analyzing the corpuses available with the functions provided and found success. Next, I needed to acquire the texts of the Radio Transcripts. With the help of Professor Liberman, I was guided through a series of programs and code in a UNIX environment that downloaded all of the html files and created my current corpus of documents.
-The first program we created looked through all of the URL’s by year and put those addresses into a file label RadioIndex”year”.html. This was done accordingly for years in sequence from 1982 to 2014. Next, we noticed that all of the pages had very similar URL’s except for an ID number for each page at the end. In addition, we observed that these were not in direct numerical order by president. So, code was created that captured the URL ID numbers and placed them into a file called AllRadio.txt in chronological. Next, we took the indexes from AllRadio.txt and printed out each transcript to its own file on my computer. However, because the ID’s numerical order did not correspond with their chronological order, that all became scrambled in file explorer. I later solved this issue in my personal python code.
-Next I began to create a program in python called PresidentHTMLParser.py that would make the html files “analyzable”. 
-Function – readInFiles():
-• Opens AllRadio.txt and reads it 
-• Strips the formatting in the document so that the file is only the fileIDs
-• These are then each concanted to a string called StaticVariables.fileIDs
-• This is then tokenized into an list/array to be used later
-Presidents(president):
-• Takes in user inputted string related to which President they are interested in
-• Sets indices corresponding to the according documents transcripts – these variables are used later
-displayType(formOfDisplay):
-• Takes in user input for type (paragraph or tokenize) and implements it
-printTranscripts():
-• Concants cleaned html files corresponding to the chosen President into one outputHTML string or array (this depends on whether is in paragraph of tokenized form)
-• Makes all words lower case if the user specifies
-frequencyDistribution():
-• Prepares data to be analyzed
-• Removes common stop words like (ex: is)
-• Removes end punctuation – this is to ensure that “people” is counted the same as “people,”
-• Takes the frequency distribution of the output and plots it
-conditionalFreqDist():
-• Creates and implements code that plots a conditional frequency distribution of user chosen words.
-• Can either be cumulative of non-cumulative with respect to time.</p>
+<p>After downloading and setting up Enthought’s Canopy5 python compiler, I set up and tested the NLTK package. I practiced analyzing the corpuses available with the functions provided and found success. Next, I needed to acquire the texts of the Radio Transcripts. With the help of Professor Liberman, I was guided through a series of programs and code in a UNIX environment that downloaded all of the html files and created my current corpus of documents.</p>
+<p>The first program we created looked through all of the URL’s by year and put those addresses into a file label RadioIndex”year”.html. This was done accordingly for years in sequence from 1982 to 2014. Next, we noticed that all of the pages had very similar URL’s except for an ID number for each page at the end. In addition, we observed that these were not in direct numerical order by president. So, code was created that captured the URL ID numbers and placed them into a file called AllRadio.txt in chronological. Next, we took the indexes from AllRadio.txt and printed out each transcript to its own file on my computer. However, because the ID’s numerical order did not correspond with their chronological order, that all became scrambled in file explorer. I later solved this issue in my personal python code.</p>
+<p>Next I began to create a program in python called PresidentHTMLParser.py that would make the html files “analyzable”. </p>
+<dl><dt>Function – readInFiles():</dt>
+<dd>Opens AllRadio.txt and reads it</dd> 
+<dd>Strips the formatting in the document so that the file is only the fileIDs</dd>
+<dd>These are then each concanted to a string called StaticVariables.fileIDs</dd>
+<dd>This is then tokenized into an list/array to be used later</dd>
+<dt>Presidents(president):</dt>
+<dd>Takes in user inputted string related to which President they are interested in</dd>
+<dd>Sets indices corresponding to the according documents transcripts – these variables are used later</dd>
+<dt>displayType(formOfDisplay):</dt>
+<dd>Takes in user input for type (paragraph or tokenize) and implements it</dd>
+<dt>printTranscripts():</dt>
+<dd>Concants cleaned html files corresponding to the chosen President into one outputHTML string or array (this depends on whether is in paragraph of tokenized form)</dd>
+<dd>Makes all words lower case if the user specifies</dd>
+<dt>frequencyDistribution():</dt>
+<dd>Prepares data to be analyzed</dd>
+<dd>Removes common stop words like (ex: is)</dd>
+<dd>Removes end punctuation – this is to ensure that “people” is counted the same as “people,”</dd>
+<dd>Takes the frequency distribution of the output and plots it</dd>
+<dt>conditionalFreqDist():</dt>
+<dd>Creates and implements code that plots a conditional frequency distribution of user chosen words.</dd>
+<dd>Can either be cumulative of non-cumulative with respect to time.</dd>
+
+
+
+
 
 <h3>
-<a name="iv-findings-and-results" class="anchor" href="#iv-findings-and-results"><span class="octicon octicon-link"></span></a>IV. Findings and Results</h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Ronald Reagan Frequency Distribution
-George W. Bush Jr. Frequency Distribution
-        Observations and Analysis:
-One thing that initially stand out is the use of the words “us” and “we”. Words like these connote unity and joint action. When the listener hears this, it creates a greater sense of togetherness and cooperation. When trying to emphasize a point, often leaders and especially presidents use these words as opposed to “I”. It also promotes the idea that the president is for the people, doing things that are in the interest of the people. Each also uses “americans”, and its derivations, frequently.
-An interesting difference between the plots of Reagan v. Bush can be noted in key words associated historically with their presidencies. For Reagan, “soviet” is one of his top 20 used words, while for Bush both “Iraq” and “Iraqi” are used heavily. Conflicts with these nations were important news during each of their presidencies. This only further strengthen the notion of the extreme emphasis put on each of these events. This intuition is evidenced with the conditional frequency below:</p>
-
-<p>This graphs the spikes in uses of the words clearly indicate the change in the uses of these key indicator words overtime. Soviet is heavily used during Reagan’s span and then drops off. This is almost immediately replaced by Iraq, which begins to spike during Bush Jr’s presidency. </p>
-
-<p>Some key features of Obama’s frequency distribution are the words middle, class, companies, reform, and jobs. This is very appropriate as a huge part of his presidency has been the effects of the 2008 economic collapse. Additionally health is both a highly used word for Obama and Clinton, drawing comparisons between their presidencies. Also of note is the continued use of “us”, “new” and “we”.</p>
-
-<hr><p>Above is a conditional frequency distribution graph of a couple interesting words in the addresses for the Clinton presidency. This cumulative plot shows most notable that there is a spike in the use of the word health around 1/3 of the way through his presidency. This coincides with his efforts to put through the Health Security Act of 1993. It is also of note that Clinton uses “economy” and “us” fairly consistently on average as there are no significant spikes in the trend lines.</p>
-
-<p>Above, is a conditional frequency distribution over the course of Obama’s presidency for the words “health”, and “middle” (middle is in reference to its use in the common phrase “middle class”). It is clear that in the beginning of his first term, health was one of his major buzzwords. It could be argued that this is because reforming health was one of his biggest campaign platforms and promises. However, after some time this appears to die off. Replacing it, are more economically focused issues as he is dealing with the regrowth of the economy. According to my research words like “middle” along with “jobs” and “economy” begin to see a rise around this time. However, as the addresses begin to become more recent, “health” again sees a rise. This is because the bill for Obamacare had final comeback into relevance with it on the voting bloc in congress. This analysis and observations are further evidence by the cumulative plot below.</p>
-
-<p>Both of the graphs above show support for the claim of Obama’s heavy emphasis on the economic facotrs during his presidency. However, from looking at the data, it is hard if not impossible to make a claim about a specific event or spike in the frequency. While it may seem like the data set has “no conclusion” I take both these graphs to show how consistently both of these words were mentioned. Also, it can be seen that “jobs” begins to show increased prominence over the use of “economy” overtime. </p>
-
-<pre><code>    The next set of data can be found on the following page
-
-
-
-
-
-Analysis on the following page
-</code></pre>
-
-<p>On the previous page, are two very interesting plots involving all of the President’s terms. It can be seen from the total frequency distribution that “new” is far and away the most used word. Why is this? One possible explanation is the every president is looking to create “new” legislature – it is part of their job. By emphasizing their bills “new”-ness, presidents are showing the public there desire to change legislature for the better. The words “us”, “economy”, “tax”, and “health” are also notable. The second plot delves further into the comparisons of key words in the first graph by comparing “Iraq”, “security”, and “terrorists”. It could be assumed that, after the 9/11 attacks that the uses of “security” would increase. However, this is clearly not the case as it is used fairly consistently over time. This is in sharp contrast to “iraq” and “terrorists” which see huge spikes around Bush’s presidency. These words mark in shift in the presentation of the threats to Americans. Focus was quickly shifted the easily to those who committed the atrocities and where they came from.</p>
-
-<p>The plots analyzed above are just a limited amount of investigation that this program can provide. Any group of words can be plotted and analyzed for its content. With this project and program the combinations are unlimited.</p>
-
-<h3>
-<a name="v--future-research-exploration-and-improvements" class="anchor" href="#v--future-research-exploration-and-improvements"><span class="octicon octicon-link"></span></a>V.  Future Research, Exploration, and Improvements</h3>
-
-<p>This project has helped me to improve and apply my coding and logical skills, as well as analyze and present data. In the future there are some changes I have to make to improve my program and data:</p>
-
-<p>• Better Organized Program
-o   More Logical
-o   Better stripping of punctuation
-o   More user friendly
-• Concurrence
-o   Creates associations between related words
-• Application of algorithm to compute:<br>
-o   Computer weighted log ratios
-o   ¬¬¬¬This can be used to see which words are related most to which president.</p>
-
-<h3>
-<a name="annotated-bibliography" class="anchor" href="#annotated-bibliography"><span class="octicon octicon-link"></span></a>Annotated Bibliography:</h3>
-
-<p>1 Presidential Saturday Radio Addresses:
-URL: <a href="http://www.presidency.ucsb.edu/satradio.php">http://www.presidency.ucsb.edu/satradio.php</a>
-This comprises my datasets and corpus of Radio Addresses</p>
-
-<p>2 A Survey of Topic Tracking Techniques by Kamaldeep Kaur and Vishal Gupta
-    URL: <a href="http://www.ijarcsse.com/docs/papers/May2012/Volum2_issue5/V2I500532.pdf">http://www.ijarcsse.com/docs/papers/May2012/Volum2_issue5/V2I500532.pdf</a>
-    This paper provides background on topic tracking techniques and inspiration for my own analysis</p>
-
-<p>3 Text Mining: A Brief Survey by Falguni Patel and Neha Soni
-    URL: <a href="http://www.theaccents.org/ijacr/papers/conference/icett2012/43.pdf">http://www.theaccents.org/ijacr/papers/conference/icett2012/43.pdf</a>
-    Provided a review of text mining principles and model programs.</p>
-
-<p>4 Natural Language Processing with Python:
-    URL: <a href="http://www.nltk.org/book/">http://www.nltk.org/book/</a>
-    This book gave me tools and skills necessary to execute this project. It helped navigate me through learning python and the NLTK library</p>
-
-<p>5 Enthought Canopy:
-    Python compiler used to execute program.</p>
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
         </article>
       </div>
     </div>
@@ -188,16 +127,6 @@ This comprises my datasets and corpus of Radio Addresses</p>
     <p class="name"></p>
   </div>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("A-53646754-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+  
 </body>
 </html>
