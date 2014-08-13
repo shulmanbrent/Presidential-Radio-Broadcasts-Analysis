@@ -1,0 +1,20 @@
+Annotated Bibliography:
+	
+1 Presidential Saturday Radio Addresses:
+URL: http://www.presidency.ucsb.edu/satradio.php
+This comprises my datasets and corpus of Radio Addresses
+
+2 A Survey of Topic Tracking Techniques by Kamaldeep Kaur and Vishal Gupta
+	URL: http://www.ijarcsse.com/docs/papers/May2012/Volum2_issue5/V2I500532.pdf
+	This paper provides background on topic tracking techniques and inspiration for my own analysis
+
+3 Text Mining: A Brief Survey by Falguni Patel and Neha Soni
+	URL: http://www.theaccents.org/ijacr/papers/conference/icett2012/43.pdf
+	Provided a review of text mining principles and model programs.
+
+4 Natural Language Processing with Python:
+	URL: http://www.nltk.org/book/
+	This book gave me tools and skills necessary to execute this project. It helped navigate me through learning python and the NLTK library
+
+5 Enthought Canopy:
+	Python compiler used to execute program.
