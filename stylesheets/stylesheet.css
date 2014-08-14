@@ -431,7 +431,10 @@ body {
   font-size: 15px;
   font-family: Arial, Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  background: #D1D1D1;
+  background: -webkit-linear-gradient(#FFFFFF, #BBBBBB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FFFFFF, #BBBBBB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FFFFFF, #BBBBBB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FFFFFF, #BBBBBB); /* Standard syntax */
 }
 
 a {
