@@ -903,6 +903,16 @@ footer .owner p a {
   box-sizing: border-box;
 }
 
+p.blockline {
+  font-style: italic;
+  font-family:Georgia, serif;
+  font-size: 17px;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  padding: 10px 20px;
+  padding-left: 50px;
+}
+
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
