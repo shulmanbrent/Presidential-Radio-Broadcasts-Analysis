@@ -470,9 +470,16 @@ h1.title {
 }
 
 p.tagline {
-  padding: 20px 20px 0;
-  color: #fff;
-  font-size: 17px;
+padding: 20px 20px 0;
+color: #fff;
+display: block;
+font-size: 1.6em;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+text-align: center;
 }
 
 #main {
