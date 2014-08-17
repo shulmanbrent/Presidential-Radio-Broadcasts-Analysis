@@ -11,4 +11,4 @@ Slightly unorganized because these programs were made during my first ever progr
 
 PresidentHTMLParser is the main file.
 
-Bayes.py and other were just parts of futre Ideas that I had
+Bayes.py and other were just parts of future Ideas that I had
